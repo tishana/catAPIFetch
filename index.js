@@ -12,7 +12,7 @@ const getFavouritesBtn = document.getElementById("getFavouritesBtn");
 
 // Step 0: Store your API key here for reference and easy access.
 const API_KEY =
-  "live_pp70Nb8qDJQTXjTtft27jFP8QhrFWvMi2wE9SMesNaTEv9IAf7j051xCdkjIAIlv";
+  "MIND_YOUR_BIDNESS";
 
 /**
  * 1. Create an async function "initialLoad" that does the following:
@@ -24,6 +24,7 @@ const API_KEY =
  */
 async function initialLoad() {
   const response = await fetch(
+    // You shouldn't need the API Key to get 10 images
     `https://api.thecatapi.com/v1/images/search?limit=10?`
   );
   const jsonData = await response.json();
